@@ -13,6 +13,7 @@
 		2053F23429E4ECF700E9925E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2053F23329E4ECF700E9925E /* Preview Assets.xcassets */; };
 		2053F23D29E4F41B00E9925E /* turtlerock.png in Resources */ = {isa = PBXBuildFile; fileRef = 2053F23C29E4F41B00E9925E /* turtlerock.png */; };
 		2053F24129E4F47A00E9925E /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2053F24029E4F47A00E9925E /* CircleImage.swift */; };
+		2053F24329E4F51600E9925E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2053F24229E4F51600E9925E /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		2053F23329E4ECF700E9925E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2053F23C29E4F41B00E9925E /* turtlerock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = turtlerock.png; path = ../../../../Pictures/turtlerock.png; sourceTree = "<group>"; };
 		2053F24029E4F47A00E9925E /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		2053F24229E4F51600E9925E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				2053F22C29E4ECF600E9925E /* LandmarksApp.swift */,
 				2053F22E29E4ECF600E9925E /* ContentView.swift */,
 				2053F24029E4F47A00E9925E /* CircleImage.swift */,
+				2053F24229E4F51600E9925E /* MapView.swift */,
 				2053F23C29E4F41B00E9925E /* turtlerock.png */,
 				2053F23029E4ECF700E9925E /* Assets.xcassets */,
 				2053F23229E4ECF700E9925E /* Preview Content */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2053F22F29E4ECF600E9925E /* ContentView.swift in Sources */,
+				2053F24329E4F51600E9925E /* MapView.swift in Sources */,
 				2053F22D29E4ECF600E9925E /* LandmarksApp.swift in Sources */,
 				2053F24129E4F47A00E9925E /* CircleImage.swift in Sources */,
 			);
