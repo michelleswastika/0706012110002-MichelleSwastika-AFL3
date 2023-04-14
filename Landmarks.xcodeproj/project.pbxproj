@@ -89,9 +89,9 @@
 		2053F22B29E4ECF600E9925E /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
+				2053F22C29E4ECF600E9925E /* LandmarksApp.swift */,
 				2053F26529E8EA3600E9925E /* Resources */,
 				2053F26429E8EA2400E9925E /* Model */,
-				2053F22C29E4ECF600E9925E /* LandmarksApp.swift */,
 				2053F26229E8E9FF00E9925E /* Views */,
 				2053F24B29E8E84300E9925E /* charleyrivers@2x.jpg */,
 				2053F25429E8E84300E9925E /* chilkoottrail@2x.jpg */,

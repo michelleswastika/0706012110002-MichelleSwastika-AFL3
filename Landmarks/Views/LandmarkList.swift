@@ -9,10 +9,9 @@ import SwiftUI
 
 struct LandmarkList: View {
     var body: some View {
-//  Replace the default Text view with a List, and provide LandmarkRow instances with the first two landmarks as the list’s children.
-        List {
-            LandmarkRow(landmark: landmarks[0])
-            LandmarkRow(landmark: landmarks[1])
+//  Replace the default Text view with a List, pass the model data’s landmarks array to the List initializer, return a LandmarkRow from the closure.
+        List(landmarks) { landmark in
+            LandmarkRow(landmark: landmark)
         }
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 import CoreLocation
 
 // Define a Landmark structure with a few properties matching names of some of the keys in the landmarkData.json data file.
-struct Landmark: Hashable, Codable {
+struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
     var park: String
