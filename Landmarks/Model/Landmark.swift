@@ -24,6 +24,11 @@ struct Landmark: Hashable, Codable, Identifiable {
     }
 // Add a coordinates property to the structure using a nested Coordinates type that reflects the storage in the JSON data structure.
     private var coordinates: Coordinates
+    var locationCoordinate: CLLocationCoordinate2D {
+        CLLocationCoordinate2D(
+            latitude: coordinates.latitude,
+            longitude: coordinates.longitude)
+    }
     
     struct Coordinates: Hashable, Codable {
         var latitude: Double
