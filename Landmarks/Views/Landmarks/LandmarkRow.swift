@@ -20,14 +20,21 @@ struct LandmarkRow: View {
                 .frame(width: 50, height: 50)
 //  Modify the text view to use the landmark property’s name.
             Text(landmark.name)
+            
+            Spacer()
+//  After the spacer, add a star image inside an if statement to test whether the current landmark is a favorite.
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }
 
 // In the previews static property of LandmarkRow_Previews, add the landmark parameter to the LandmarkRow initializer, specifying the first element of the landmarks array.
 struct LandmarkRow_Previews: PreviewProvider {
+    static var landmarks = ModelData().landmarks
     static var previews: some View {
-//  Wrap the returned row in a Group
         Group {
             LandmarkRow(landmark: landmarks[0])
             LandmarkRow(landmark: landmarks[1])
