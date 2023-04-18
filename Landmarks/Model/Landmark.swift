@@ -32,6 +32,12 @@ struct Landmark: Hashable, Codable, Identifiable {
     var image: Image {
         Image(imageName)
     }
+    
+    //  Add a computed property to the Landmark structure that returns the feature image, if it exists.
+    var featureImage: Image? {
+        isFeatured ? Image(imageName + "_feature") : nil
+    }
+    
     // Add a coordinates property to the structure using a nested Coordinates type that reflects the storage in the JSON data structure.
     private var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {
