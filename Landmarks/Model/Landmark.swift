@@ -17,13 +17,22 @@ struct Landmark: Hashable, Codable, Identifiable {
     var state: String
     var description: String
     var isFavorite: Bool
+    var isFeatured: Bool
     
-//  Add an imageName property to read the name of the image from the data, and a computed image property that loads an image from the asset catalog.
+    //  In Landmark.swift, add a Category enumeration and a category property to the Landmark structure.
+    var category: Category
+    enum Category: String, CaseIterable, Codable {
+        case lakes = "Lakes"
+        case rivers = "Rivers"
+        case mountains = "Mountains"
+    }
+    
+    //  Add an imageName property to read the name of the image from the data, and a computed image property that loads an image from the asset catalog.
     private var imageName: String
     var image: Image {
         Image(imageName)
     }
-// Add a coordinates property to the structure using a nested Coordinates type that reflects the storage in the JSON data structure.
+    // Add a coordinates property to the structure using a nested Coordinates type that reflects the storage in the JSON data structure.
     private var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
