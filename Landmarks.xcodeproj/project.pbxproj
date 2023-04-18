@@ -42,6 +42,7 @@
 		2053F2C629EE317200E9925E /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2053F2C529EE317200E9925E /* PageViewController.swift */; };
 		2053F2C829EE324300E9925E /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2053F2C729EE324300E9925E /* FeatureCard.swift */; };
 		2053F2CA29EE329500E9925E /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2053F2C929EE329500E9925E /* PageView.swift */; };
+		2053F2CC29EE346900E9925E /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2053F2CB29EE346900E9925E /* PageControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		2053F2C529EE317200E9925E /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		2053F2C729EE324300E9925E /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 		2053F2C929EE329500E9925E /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		2053F2CB29EE346900E9925E /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				2053F2C529EE317200E9925E /* PageViewController.swift */,
+				2053F2CB29EE346900E9925E /* PageControl.swift */,
 				2053F2C929EE329500E9925E /* PageView.swift */,
 			);
 			path = PageView;
@@ -322,6 +325,7 @@
 				2053F24329E4F51600E9925E /* MapView.swift in Sources */,
 				2053F2AE29EE29FE00E9925E /* GraphCapsule.swift in Sources */,
 				2053F22D29E4ECF600E9925E /* LandmarksApp.swift in Sources */,
+				2053F2CC29EE346900E9925E /* PageControl.swift in Sources */,
 				2053F26F29E901D300E9925E /* FavoriteButton.swift in Sources */,
 				2053F2B829EE2DA000E9925E /* CategoryItem.swift in Sources */,
 				2053F2B029EE29FE00E9925E /* HikeDetail.swift in Sources */,
