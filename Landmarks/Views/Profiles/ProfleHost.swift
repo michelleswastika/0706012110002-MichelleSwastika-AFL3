@@ -36,9 +36,6 @@ struct ProfileHost: View {
                         modelData.profile = draftProfile
                     }
             }
-            
-            // Read the user’s profile data from the environment to pass control of the data to the profile host.
-            ProfileSummary(profile: modelData.profile)
         }
         .padding()
     }

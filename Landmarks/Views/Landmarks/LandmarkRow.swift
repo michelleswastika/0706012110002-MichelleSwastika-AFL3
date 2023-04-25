@@ -8,26 +8,34 @@
 import SwiftUI
 
 struct LandmarkRow: View {
-//  Add landmark as a stored property of LandmarkRow.
+    //  Add landmark as a stored property of LandmarkRow.
     var landmark: Landmark
     
     var body: some View {
-//  Embed the existing text view in an HStack.
         HStack {
-//  Complete the row by adding an image before the text view, and a spacer after it.
             landmark.image
                 .resizable()
                 .frame(width: 50, height: 50)
-//  Modify the text view to use the landmark property’s name.
-            Text(landmark.name)
+                .cornerRadius(5)
+            VStack(alignment: .leading) {
+                Text(landmark.name)
+                    .bold()
+                #if !os(watchOS)
+                Text(landmark.park)
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                #endif
+            }
+            
             
             Spacer()
-//  After the spacer, add a star image inside an if statement to test whether the current landmark is a favorite.
+            //  After the spacer, add a star image inside an if statement to test whether the current landmark is a favorite.
             if landmark.isFavorite {
                 Image(systemName: "star.fill")
                     .foregroundColor(.yellow)
             }
         }
+        .padding(.vertical, 4)
     }
 }
 
@@ -39,7 +47,7 @@ struct LandmarkRow_Previews: PreviewProvider {
             LandmarkRow(landmark: landmarks[0])
             LandmarkRow(landmark: landmarks[1])
         }
-//  Use the previewLayout(_:) modifier to set a size that approximates a row in a list.
+        //  Use the previewLayout(_:) modifier to set a size that approximates a row in a list.
         .previewLayout(.fixed(width: 300, height: 70))
     }
 }
